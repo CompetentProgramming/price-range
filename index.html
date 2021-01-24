@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./scss/styles.css">
+  
+  <title>Competent Programmin | Interactive pricing component</title>
+</head>
+<body>
+  <section>
+    <h1>
+      Simple, traffic-based pricing
+    </h1>
+    <h2>
+      Sign-up for our 30-day trial. No credit card required. 
+    </h2>
+
+    <div class="price-card">
+      <div class="stats">
+        <div class="stats_views">
+          <span></span> Pageviews
+        </div>
+        <div class="stats_price">
+          <span></span> /month
+        </div>
+      </div>
+      <div class="range-container">
+        <input type="range" id="range" name="range" min="1" max="5">
+      </div>
+      <div class="billing">
+        Monthly Billing
+        <label for="billing" class="checkbox">
+          <input type="checkbox" id="billing">
+          <span class="checkbox_slider"></span>
+        </label>
+        Yearly Billing
+        <span class="billing_discount">25% <span>discount</span></span>
+      </div>
+      <div class="trial">
+        <ul>
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+        <button type="button" aria-label="Start my trial">Start my trial</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
